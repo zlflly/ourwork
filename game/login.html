@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>
+            login
+        </title>
+        <style>
+            #login{
+                background-color: rgb(135, 173, 241);
+                width: 300;
+                margin: 50 auto;
+                border-radius: 5px;
+                display: block;
+            }
+			#register{
+                background-color: rgb(135, 173, 241);
+                width: 300;
+                margin: 50 auto;
+                border-radius: 5px;
+                display: none;
+            }
+            h1{
+                text-align: center;
+            }
+            form p{
+                font-family: 楷体;
+                font-size: 18px;
+                margin: 20px 30px;
+            }
+        </style>
+        <script type="text/javascript" src="js/login.js"></script>
+    </head>
+    <body>
+        <div>
+            <form id="login">
+				<h1>登录</h1><hr>
+                <p>用户名<br />
+                    <input type="text" class="textinput" id="login-username" placeholder="请输入用户名" />
+                </p>
+                <p>密码<br />
+                    <input type="password" class="textinput" id="login-password" placeholder="请输入密码" />
+                </p>
+                <p>
+                    <input type="button" value="登录" onclick="login()"/>
+                </p>
+                <p>
+                    没有账户？<input type="button" value="注册" onclick="fun()">
+                </p>
+                <br>
+            </form>
+        </div>
+        <div>
+            <form id="register">
+				<h1>注册</h1><hr>
+                <p>用户名<br />
+                    <input type="text" class="textinput" id="login-username0" placeholder="请输入用户名" />
+                </p>
+                <p>密码<br />
+                    <input type="password" class="textinput" id="login-password-0" placeholder="请输入密码" />
+                </p>
+				<p>再次输入密码<br />
+                    <input type="password" class="textinput" id="login-password-1" placeholder="再次输入密码" />
+                </p>
+                <p>
+                    <input type="button" value="注册" onclick="register()"/>
+                </p>
+                <p class="smtxt">已有账户？<input type="button" value="登录" onclick="fun()">
+                </p>
+                <br>
+            </form>
+        </div>
+    </body>
+</html>
